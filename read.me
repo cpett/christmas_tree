@@ -39,6 +39,18 @@ Access the raspi on the web/ssh with only the hostname:
 		ssh: ssh pi@raspberrypi.local
 	
 	**Note, you may have to do some configuring to get avahi-daemon to run on startup
+	
+	Some RasPi3s have been having problems with randomly dropping wifi connections. Here's a work-around I found:
+		1. Run: # sudo iwconfig wlan0 power off
+			a. Some RasPi3s use: # sudo iw dev wlan0 set power_save off
+		2. Add this to /etc/rc.local
+			a. # sudo vim /etc/rc.local
+			b. # below the IP print if statement
+			   sudo iwconfig wlan0 power off
+		3. Your machine should now turn off power management settings on boot
+		4. Test by running: # iwconfig
+			a. Power Management should say that it's off
+		NOTE: If your machine uses iw dev wlan0... then that will be the command you add to /etc/rc.local
 
 
 	

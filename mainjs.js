@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
 		$.ajax({
 		
-			url: "/treeon.sh",
+			url: "/treeon.php",
 			type: "post"
 			
 		});
@@ -18,7 +18,7 @@ $( document ).ready(function() {
 
                 $.ajax({
 
-                        url: "/treeoff.sh",
+                        url: "/treeoff.php",
                         type: "post",
 			success: function() {
 				$("button").removeAttr("disabled");
