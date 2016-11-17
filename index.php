@@ -24,8 +24,12 @@
               <span class="card-title">Tree Controls</span>
 		<div class="row">
 			<div class="col l12 m12 m12">
-				<button id="btnPlay" class="center-align btn green xmas_btn col s5">Tree On</button>
-				<button id="btnStop" class="center-align btn red xmas_btn col s5">Tree Off</button>
+				<button id="btnPlay" class="btn green xmas_btn col s12">Tree On</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col l12 m12 s12">
+				<button id="btnStop" class="btn red xmas_btn col s12">Tree Off</button>
 			</div>
 		</div>
             </div>

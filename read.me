@@ -1,0 +1,44 @@
+This is a quick and dirty guide for how to get the raspi up and running with APACHE/PHP to create a web UI
+
+Install LAMP stack on the raspi
+
+create folder cgi-bin in /var/www/html/
+
+edit /etc/sudoers/ with:
+	www-data ALL=(ALL) NOPASSWD:ALL
+  (below pi user)
+  
+  Should look like this:
+    # User alias specification
+    pi ALL=(ALL) NOPASSWD:ALL
+    www-data ALL=(ALL) NOPASSWD:ALL  	
+  
+sudo chown -R pi /var/www/html
+sudo chmod +x -R /var/www/html
+	^^Not good practice, don't do in real life
+
+edit /etc/apache2/apache2.conf
+	ScriptAlias /cgi-bin/ /var/www/html/cgi-bin/
+
+
+Put .py files in /var/ww/html/cgi-bin
+
+Call the file from index.php with
+	<?php
+  		exec('sudo -u pi python /var/www/html/cgi-bin/pyfile.py')
+  	?>
+
+
+Access the raspi on the web/ssh with only the hostname:
+	1. sudo apt-get install avahi-daemon
+	2. sudo service avahi-daemon start
+	3. sudo systemctl enable avahi-daemon 
+
+	You should now be able to access the raspi by:
+		Web: http://raspberrypi.local
+		ssh: ssh pi@raspberrypi.local
+	
+	**Note, you may have to do some configuring to get avahi-daemon to run on startup
+
+
+	
