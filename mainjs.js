@@ -91,6 +91,21 @@ $( document ).ready(function() {
                 });
         });
 
+        $('#sngHollyJolly').click(function(e) {
+                e.preventDefault();
+
+                $("button").attr("disabled", true);
+
+                $.ajax({
+
+                        url: "/holly_jolly.php",
+                        type: "post",
+                        success: function() {
+                                $("button").removeAttr("disabled");
+                        }
+                });
+        });
+
 
 
 });
