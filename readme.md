@@ -1,6 +1,7 @@
 #RasPi Christmas
 
-####BYU Festival of Trees Repository ######Quick'n'Dirty guide for how to get the raspi up and running
+####BYU Festival of Trees Repository
+######Quick'n'Dirty guide for how to get the raspi up and running
 
 ##Install LAMP stack on the raspi
 
