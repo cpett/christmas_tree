@@ -299,6 +299,7 @@ def star_inside_solid(R,G,B):
 GPIO.setmode(GPIO.BOARD)
 for i in range(1,9):
   GPIO.setup(pin_map[i], GPIO.OUT)
+  GPIO.output(pin_map[i], False)
 time.sleep(2.0);
 dev    = "/dev/spidev0.0"
 spidev = file(dev,"wb")
