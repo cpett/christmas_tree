@@ -3,8 +3,11 @@
 ####BYU Festival of Trees Repository
 ######Quick'n'Dirty guide for how to get the raspi up and running
 [Link to original Instructables](http://www.instructables.com/id/Raspberry-Pi-Christmas-Tree-Light-Show/)
+
 Sample 1: [Carol of the Bells](https://youtu.be/ZdeD2sktkPs)
+
 Sample 2: [BYU Fight Song (2016)](https://youtu.be/uy9q6Hy3UpQ)
+
 Sample 3: [BYU Fight Song (2015)](https://youtu.be/C3xfx6bzrG8)
 
 ##Install LAMP stack on the raspi
@@ -23,7 +26,9 @@ Sample 3: [BYU Fight Song (2015)](https://youtu.be/C3xfx6bzrG8)
     ```
   3. Edit Permissions
     ```sudo chown -R pi /var/www/html```
+    
     ```sudo chmod +x -R /var/www/html```
+    
 	^^Not good practice, don't do in real life
 
   4. Edit the file /etc/apache2/apache2.conf
@@ -65,6 +70,7 @@ Sample 3: [BYU Fight Song (2015)](https://youtu.be/C3xfx6bzrG8)
   4. Test by running: ```# iwconfig```
      Power Management should say that it's off
   **NOTE:** If your machine uses iw dev wlan0... then that will be the command you add to /etc/rc.local
+  
 #### Work-Around #2: Cron Job
   1. Make sure that the file located in ```/var/www/html/cgi-bin``` is executable
     ```sudo chmod +x /var/www/html/cgi-bin/wifi_rebooter.sh```
