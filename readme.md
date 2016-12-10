@@ -2,7 +2,9 @@
 
 ####BYU Festival of Trees Repository
 ######Quick'n'Dirty guide for how to get the raspi up and running
-[Link to original Instructables](http://www.instructables.com/id/Raspberry-Pi-Christmas-Tree-Light-Show/)
+######A reminder that the songs contained in this repo are not owned by me, they are only for reference. Please make sure to purchase these songs yourself
+
+[Link to original Instructables](http://www.instructables.com/id/Raspberry-Pi-Christmas-Tree-Light-Show/) (for the hardware)
 
 Sample 1: [Carol of the Bells](https://youtu.be/ZdeD2sktkPs)
 
