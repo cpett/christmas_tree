@@ -1,3 +1,10 @@
+Sample 1: [Carol of the Bells](https://youtu.be/ZdeD2sktkPs=45)
+
+Sample 2: [BYU Fight Song (2016)](https://youtu.be/uy9q6Hy3UpQ)
+
+Sample 3: [BYU Fight Song (2015)](https://youtu.be/C3xfx6bzrG8)
+
+
 #RasPi Christmas
 
 ####BYU Festival of Trees Repository
@@ -5,12 +12,6 @@
 ######A reminder that the songs contained in this repo are not owned by me, they are only for reference. Please make sure to purchase these songs yourself
 
 [Link to original Instructables](http://www.instructables.com/id/Raspberry-Pi-Christmas-Tree-Light-Show/) (for the hardware)
-
-Sample 1: [Carol of the Bells](https://youtu.be/ZdeD2sktkPs)
-
-Sample 2: [BYU Fight Song (2016)](https://youtu.be/uy9q6Hy3UpQ)
-
-Sample 3: [BYU Fight Song (2015)](https://youtu.be/C3xfx6bzrG8)
 
 ##Install LAMP stack on the raspi
 
